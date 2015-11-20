@@ -1,0 +1,20 @@
+{
+    "code": "200",
+    "message": "success",
+    "token": "123123123",
+    "cookie_str": "123123123123",
+    "kb_guid": "123123123",
+    "mywiz_email": "adfasdf@mywiz.cn",
+    "user": {
+        "user_id": "sdfasdf@mail.com",
+        "displayname": "你的名字",
+        "mobile": "18172927223",
+        "return_message": "ok",
+        "dt_created": "2010-01-23T13:08:27.000Z",
+        "language": "zh_CN",
+        "user_guid": "23423423423asdfsadfsdfsdf",
+        "api_version": "5",
+        "return_code": "200",
+        "email": "adfasdf@mywiz.cn"
+    }
+}

@@ -24,7 +24,7 @@
 		if (!token || typeof token !== 'string') {
 			token = $.cookie('token');
 			if (!token || typeof token !== 'string') {
-				document.location.replace(constant.url.LOGIN);
+				document.location.replace("/login.html");
 			}
 		} else {
 			// 保存到cookie中
@@ -35,5 +35,5 @@
 		}
 	}
 
-	initUrl();
+	// initUrl();  不做处理
 })();

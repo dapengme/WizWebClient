@@ -1,0 +1,12 @@
+{
+    "code": 200,
+    "message": "success",
+    "list": [{
+        "tag_group_guid": "",
+        "tag_name": "知乎日报",
+        "dt_info_modified": "2014-05-12T12:01:45.000Z",
+        "tag_description": "",
+        "tag_guid": "ce9aae1asfasdfasdf-fb9df3f43bfd",
+        "version": "121"
+    }]
+}

@@ -66,7 +66,7 @@ define(["../../common/util/GlobalUtil","../context","../constant","../remote",".
 							} else {
 								notification.callError(data.message);
 							}
-						}, handlerJqueryAjaxError);	
+						}, handlerJqueryAjaxError);
 					}
 				},
 				// 阅读和编辑页面切换
@@ -113,7 +113,7 @@ define(["../../common/util/GlobalUtil","../context","../constant","../remote",".
 					}
 				},
 				/**
-				 * 
+				 *
 				 * 保存文档
 				 * @param  {boolean} bQuit 保存成功后是否退出
 				 * @param  {Function} callback 回调函数
@@ -205,7 +205,11 @@ define(["../../common/util/GlobalUtil","../context","../constant","../remote",".
 				showDoc: function (data) {
 					if (data.code === 200) {
 						//成功获取内容后，开始加载右侧内容
-						_curDoc.document_body = data.body;
+						if(data.body){
+							_curDoc.document_body = data.body;
+						}else{
+							_curDoc.document_body = data.document_info.document_body;
+						}
 						_curDoc.url = docViewCtrl.viewDoc(_curDoc);
 						headCtrl.showReadBtnGroup();
 					} else {
@@ -237,7 +241,7 @@ define(["../../common/util/GlobalUtil","../context","../constant","../remote",".
 			_curDoc = null;
 
 
-	
+
 
 	//整个页面的初始化
 	function init() {
@@ -258,7 +262,7 @@ define(["../../common/util/GlobalUtil","../context","../constant","../remote",".
 					return;
 				}
 				//开始调用保持在线
-				setInterval(remote.refreshToken, constant.remote.KEEP_ALIVE_TIME_MS);
+				// setInterval(remote.refreshToken, constant.remote.KEEP_ALIVE_TIME_MS);
 
 				//将user_info保存到wiz上下文
 				context.userInfo = data.user_info;
@@ -299,7 +303,7 @@ define(["../../common/util/GlobalUtil","../context","../constant","../remote",".
 		rightSplitter.init({left: 'doc_list_containner_wrapper', right: 'doc_read_area', 'splitter': 'content_splitter'});
 	}
 
-	
+
 	function initTagsMap() {
 		remote.getAllTag(context.kbGuid, function (data) {
 			if (data.code == '200') {

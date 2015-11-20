@@ -1,0 +1,20 @@
+{
+    "code": "200",
+    "message": "success",
+    "token": "a11f321cc393160250c6f04fe9df5cf05slsctwp1kch5n",
+    "cookie_str": "c7f9fd0e82b40887211119437b5321113cc88e2bd9ef85302e8b06f20feabe03",
+    "kb_guid": "91fef71d-5970-102d-9841-e242a36d36c7",
+    "mywiz_email": "zhaopeng@mywiz.cn",
+    "user": {
+        "user_id": "imzhpe@qq.com",
+        "displayname": "北冥大鸟",
+        "mobile": "18729488131",
+        "return_message": "ok",
+        "dt_created": "2010-01-23T13:08:27.000Z",
+        "language": "zh_CN",
+        "user_guid": "91fe7e19-5970-102d-9841-e242a36d36c7",
+        "api_version": "5",
+        "return_code": "200",
+        "email": "imzhpe@qq.com"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "user_info": {
+        "displayname": "北冥大鸟",
+        "dt_created": 1264252107000,
+        "email": "imzhpe@qq.com",
+        "email_verified": "true",
+        "kb_guid": "91fef71d-5970-102d-9841-e242a36d36c7",
+        "locale": "zh_CN",
+        "mobile": "18729488131",
+        "mywiz_email": "zhaopeng",
+        "user_guid": "91fe7e19-5970-102d-9841-e242a36d36c7",
+        "user_id": "imzhpe@qq.com",
+        "user_type": "free",
+        "wiz_email": "zhaopeng"
+
+    },
+    "code": 200,
+    "message": "success"
+}

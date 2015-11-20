@@ -1,0 +1,47 @@
+{
+    "code": 200,
+    "message": "success",
+    "list": [ {
+        "category_name": "My Events",
+        "location": "/My Events/",
+        "parentLocation": "/",
+        "type": "category",
+        "position": 260,
+        "isParent": true
+    }, {
+        "category_name": "My Journals",
+        "location": "/My Journals/",
+        "parentLocation": "/",
+        "type": "category",
+        "position": 3,
+        "isParent": true
+    }, {
+        "category_name": "My Notes",
+        "location": "/My Notes/",
+        "parentLocation": "/",
+        "type": "category",
+        "position": 325,
+        "isParent": false
+    }, {
+        "category_name": "My Sticky Notes",
+        "location": "/My Sticky Notes/",
+        "parentLocation": "/",
+        "type": "category",
+        "position": 321,
+        "isParent": false
+    }, {
+        "category_name": "My Tasks",
+        "location": "/My Tasks/",
+        "parentLocation": "/",
+        "type": "category",
+        "position": 299,
+        "isParent": true
+    }, {
+        "category_name": "待读",
+        "location": "/待读/",
+        "parentLocation": "/",
+        "type": "category",
+        "position": 323,
+        "isParent": false
+    }]
+}

@@ -1,0 +1,292 @@
+{
+    "code": 200,
+    "message": "success",
+    "list": [{
+        "category_name": "My Events",
+        "location": "/My Events/",
+        "parentLocation": "/",
+        "type": "category",
+        "position": 260,
+        "isParent": true
+    }, {
+        "category_name": "2011年12月",
+        "location": "/My Events/2011年12月/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 292,
+        "isParent": false
+    }, {
+        "category_name": "2012年1月",
+        "location": "/My Events/2012年1月/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 291,
+        "isParent": false
+    }, {
+        "category_name": "2013-01",
+        "location": "/My Events/2013-01/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 298,
+        "isParent": false
+    }, {
+        "category_name": "2013-02",
+        "location": "/My Events/2013-02/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 290,
+        "isParent": false
+    }, {
+        "category_name": "2013-03",
+        "location": "/My Events/2013-03/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 289,
+        "isParent": false
+    }, {
+        "category_name": "2013-04",
+        "location": "/My Events/2013-04/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 288,
+        "isParent": false
+    }, {
+        "category_name": "2013-05",
+        "location": "/My Events/2013-05/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 287,
+        "isParent": false
+    }, {
+        "category_name": "2013-06",
+        "location": "/My Events/2013-06/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 286,
+        "isParent": false
+    }, {
+        "category_name": "2013-07",
+        "location": "/My Events/2013-07/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 285,
+        "isParent": false
+    }, {
+        "category_name": "2013-08",
+        "location": "/My Events/2013-08/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 284,
+        "isParent": false
+    }, {
+        "category_name": "2013-09",
+        "location": "/My Events/2013-09/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 283,
+        "isParent": false
+    }, {
+        "category_name": "2013-10",
+        "location": "/My Events/2013-10/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 282,
+        "isParent": false
+    }, {
+        "category_name": "2013-12",
+        "location": "/My Events/2013-12/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 281,
+        "isParent": false
+    }, {
+        "category_name": "2014-01",
+        "location": "/My Events/2014-01/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 280,
+        "isParent": false
+    }, {
+        "category_name": "2014-02",
+        "location": "/My Events/2014-02/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 279,
+        "isParent": false
+    }, {
+        "category_name": "2014-03",
+        "location": "/My Events/2014-03/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 278,
+        "isParent": false
+    }, {
+        "category_name": "2014-04",
+        "location": "/My Events/2014-04/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 277,
+        "isParent": false
+    }, {
+        "category_name": "2014-05",
+        "location": "/My Events/2014-05/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 276,
+        "isParent": false
+    }, {
+        "category_name": "2014-06",
+        "location": "/My Events/2014-06/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 275,
+        "isParent": false
+    }, {
+        "category_name": "2014-07",
+        "location": "/My Events/2014-07/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 274,
+        "isParent": false
+    }, {
+        "category_name": "2014-08",
+        "location": "/My Events/2014-08/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 273,
+        "isParent": false
+    }, {
+        "category_name": "2014-09",
+        "location": "/My Events/2014-09/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 272,
+        "isParent": false
+    }, {
+        "category_name": "2014-10",
+        "location": "/My Events/2014-10/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 271,
+        "isParent": false
+    }, {
+        "category_name": "2014-11",
+        "location": "/My Events/2014-11/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 262,
+        "isParent": false
+    }, {
+        "category_name": "2014-12",
+        "location": "/My Events/2014-12/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 270,
+        "isParent": false
+    }, {
+        "category_name": "2015-01",
+        "location": "/My Events/2015-01/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 269,
+        "isParent": false
+    }, {
+        "category_name": "2015-02",
+        "location": "/My Events/2015-02/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 268,
+        "isParent": false
+    }, {
+        "category_name": "2015-03",
+        "location": "/My Events/2015-03/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 267,
+        "isParent": false
+    }, {
+        "category_name": "2015-04",
+        "location": "/My Events/2015-04/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 266,
+        "isParent": false
+    }, {
+        "category_name": "2015-05",
+        "location": "/My Events/2015-05/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 265,
+        "isParent": false
+    }, {
+        "category_name": "2015-06",
+        "location": "/My Events/2015-06/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 264,
+        "isParent": false
+    }, {
+        "category_name": "2015-07",
+        "location": "/My Events/2015-07/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 263,
+        "isParent": false
+    }, {
+        "category_name": "2015-08",
+        "location": "/My Events/2015-08/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 293,
+        "isParent": false
+    }, {
+        "category_name": "2015-09",
+        "location": "/My Events/2015-09/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 294,
+        "isParent": false
+    }, {
+        "category_name": "2015-10",
+        "location": "/My Events/2015-10/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 295,
+        "isParent": false
+    }, {
+        "category_name": "2015-11",
+        "location": "/My Events/2015-11/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 261,
+        "isParent": false
+    }, {
+        "category_name": "2015-12",
+        "location": "/My Events/2015-12/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 296,
+        "isParent": false
+    }, {
+        "category_name": "2016-01",
+        "location": "/My Events/2016-01/",
+        "parentLocation": "/My Events/",
+        "type": "category",
+        "position": 297,
+        "isParent": false
+    }, {
+        "category_name": "My Journals",
+        "location": "/My Journals/",
+        "parentLocation": "/",
+        "type": "category",
+        "position": 3,
+        "isParent": true
+    }, {
+        "category_name": "2010年",
+        "location": "/My Journals/2010年/",
+        "parentLocation": "/My Journals/",
+        "type": "category",
+        "position": 61,
+        "isParent": true
+    }]
+}

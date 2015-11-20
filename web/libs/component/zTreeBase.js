@@ -1,12 +1,12 @@
-define(["/web/locale/main"], function (require, exports, module) {
+define(["/locale/main"], function (require, exports, module) {
 	'use strict';
 
-	var locale= require('/web/locale/main'),
+	var locale= require('/locale/main'),
 			specialLocation = locale.DefaultCategory;
 
-	
 
-	
+
+
 	// 目录排序
 	function sortCategoryList(respList, type) {
 		// TODO 根据KV提供的folders_pos来进行排序
@@ -68,7 +68,7 @@ define(["/web/locale/main"], function (require, exports, module) {
 
 				if (child.location === '/Deleted Items/') {
 					// 记录需要删除的节点
-					removeIndex = index; 
+					removeIndex = index;
 					return;
 				}
 				if (child.kb_name) {
@@ -165,12 +165,12 @@ define(["/web/locale/main"], function (require, exports, module) {
 					}
 				}
 			};
-	
+
 			return setting;
 		}
 	};
 
 
 	module.exports = ZtreeBaseComponent;
-	
+
 });

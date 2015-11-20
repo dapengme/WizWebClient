@@ -1,0 +1,26 @@
+{
+    "code": 200,
+    "message": "success",
+    "list": [{
+        "tag_group_guid": "",
+        "tag_name": "九宫格日记",
+        "dt_info_modified": "2011-08-05T16:44:48.000Z",
+        "tag_description": "",
+        "tag_guid": "8d59ddasdfsdfaf4c-3b871015506c",
+        "version": "52"
+    }, {
+        "tag_group_guid": "",
+        "tag_name": "xmind",
+        "dt_info_modified": "2013-04-22T05:35:19.000Z",
+        "tag_description": "",
+        "tag_guid": "87ab88sdfgsdfg7f3afbdbcd6b",
+        "version": "57"
+    }, {
+        "tag_group_guid": "",
+        "tag_name": "markdown",
+        "dt_info_modified": "2013-05-09T05:58:01.000Z",
+        "tag_description": "",
+        "tag_guid": "c91139sdgsdfgsdfgdsf41dc164815f",
+        "version": "58"
+    }]
+}

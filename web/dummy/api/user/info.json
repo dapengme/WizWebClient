@@ -1,0 +1,19 @@
+{
+    "user_info": {
+        "displayname": "奶奶的米昂子",
+        "dt_created": 1264252107000,
+        "email": "your@mail.com",
+        "email_verified": "true",
+        "kb_guid": "9asdfasdfasdfa234234234242a36d36c7",
+        "locale": "zh_CN",
+        "mobile": "1717231231",
+        "mywiz_email": "yourmail",
+        "user_guid": "91fe7e19-5970-102d-9841-e242a36d36c7",
+        "user_id": "your@mail.com",
+        "user_type": "free",
+        "wiz_email": "yourmail"
+
+    },
+    "code": 200,
+    "message": "success"
+}

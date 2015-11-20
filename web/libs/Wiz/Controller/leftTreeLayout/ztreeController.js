@@ -1,16 +1,16 @@
-define(["./treeProperty","/web/libs/component/zTreeBase","/web/locale/main"], function (require, exports, module) {
+define(["./treeProperty","/libs/component/zTreeBase","/locale/main"], function (require, exports, module) {
 	'use strict';
 	var treeProperty = require('./treeProperty'),
 		_messageCenter = null,
-		zTreeBase = require('/web/libs/component/zTreeBase'),
+		zTreeBase = require('/libs/component/zTreeBase'),
 
-		locale= require('/web/locale/main'),
+		locale= require('/locale/main'),
 		specialLocation = locale.DefaultCategory,
 
 		_curCategory = '';
 
 	function ZtreeController() {
-		
+
 		var treeObj = null;
 		var zNodesObj = treeProperty.initNodes;
 		var setting = zTreeBase.getDefaultSetting();
@@ -109,7 +109,7 @@ define(["./treeProperty","/web/libs/component/zTreeBase","/web/locale/main"], fu
 				if (treeNode.level === 0) {
 					_messageCenter.saveNodesInfos(treeNode.type, childList);
 					if (treeNode.type === 'category') {
-						addDefaultNodes(treeNode, treeNode.type);	
+						addDefaultNodes(treeNode, treeNode.type);
 					}
 				}
 			});

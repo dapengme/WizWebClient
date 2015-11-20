@@ -1,4 +1,4 @@
-define(["/web/libs/component/zTreeBase","/web/libs/common/util/GlobalUtil","/web/locale/main"], function (require, exporst, module) {
+define(["/libs/component/zTreeBase","/libs/common/util/GlobalUtil","/locale/main"], function (require, exporst, module) {
 	'use strict';
 	// 页面中元素对应的id值
 	var _id = {
@@ -22,9 +22,9 @@ define(["/web/libs/component/zTreeBase","/web/libs/common/util/GlobalUtil","/web
 			S: 83
 		},
 
-		zTreeBase = require('/web/libs/component/zTreeBase'),
-		GlobalUtil = require('/web/libs/common/util/GlobalUtil'),
-		_locale = require('/web/locale/main').EditPage,
+		zTreeBase = require('/libs/component/zTreeBase'),
+		GlobalUtil = require('/libs/common/util/GlobalUtil'),
+		_locale = require('/locale/main').EditPage,
 
 		// 编辑器实例
 		_editor = null,
@@ -32,9 +32,9 @@ define(["/web/libs/component/zTreeBase","/web/libs/common/util/GlobalUtil","/web
 		_docInfo = {},
 		// 保存当前选中的标签列表
 		_tagsList = [],
-		// 
+		//
 		_messageCenter = null,
-		// 
+		//
 		_categoryTreeRoot = null,
 		_tagTreeRoot = null,
 		_baseElem = null,
@@ -53,7 +53,7 @@ define(["/web/libs/component/zTreeBase","/web/libs/common/util/GlobalUtil","/web
 			// 目录信息必须要显示，所以在判断外
 			showCategory();
 			if (!bNew) {
-				showDoc(docInfo);	
+				showDoc(docInfo);
 			}
 			// TODO 顺序不能变，需要一个单独的开关来控制初始化函数
 			// lsl 2012-12-20
@@ -81,8 +81,8 @@ define(["/web/libs/component/zTreeBase","/web/libs/common/util/GlobalUtil","/web
 		// 根据文档信息显示
 		function showDoc(docInfo) {
 			// 文档标题
-			$('#' + _id.titleInput).val(_docInfo.document_title);	
-			// 设置文档内容			
+			$('#' + _id.titleInput).val(_docInfo.document_title);
+			// 设置文档内容
 			_editor.setContent(docInfo.document_body);
 			// 设置并选择标签列表
 			showAndSaveTags(docInfo.document_tag_guids);
@@ -144,7 +144,7 @@ define(["/web/libs/component/zTreeBase","/web/libs/common/util/GlobalUtil","/web
     	}
     }
 
-		// 显示本地化页面的显示文字 
+		// 显示本地化页面的显示文字
 		function localizePageMessage() {
 			$('#' + _id.categoryTip).html(_locale.FolderSpan);
 			$('#' + _id.tagTip).html(_locale.TagSpan);
@@ -154,7 +154,7 @@ define(["/web/libs/component/zTreeBase","/web/libs/common/util/GlobalUtil","/web
 		// 显示的时候再初始化树空间
 		function initTree() {
 			if (_categoryTreeRoot || _tagTreeRoot) {
-				// 存在，则表示已经初始化过 
+				// 存在，则表示已经初始化过
 				return;
 			}
 			var setting = zTreeBase.getDefaultSetting(),
@@ -232,7 +232,7 @@ define(["/web/libs/component/zTreeBase","/web/libs/common/util/GlobalUtil","/web
 		// 标签选中或者取消时的注册事件
 		function tagTreeOnCheck(event, treeId, treeNode) {
 			if (treeNode.checked === true) {
-				addAndShowTags(treeNode);	
+				addAndShowTags(treeNode);
 			} else {
 				removeTag(treeNode.tag_guid);
 			}
@@ -245,7 +245,7 @@ define(["/web/libs/component/zTreeBase","/web/libs/common/util/GlobalUtil","/web
 				return;
 			}
 			var container = document.getElementById(_id.tagCtSpan);
-			if (!_tagsList || _tagsList.length < 1) { 
+			if (!_tagsList || _tagsList.length < 1) {
 				removeTagHelp();
 			}
 			var name = treeNode.name;
@@ -291,13 +291,13 @@ define(["/web/libs/component/zTreeBase","/web/libs/common/util/GlobalUtil","/web
 			// 清空保存信息
 			$('#' + _id.saveTipDiv).removeClass('error-msg').html('');
 			// 清空文档内容显示
-			_editor.setContent('');		
+			_editor.setContent('');
 		}
 
 		// 切换到编辑页面时，首先清除上次的选择
 		function unSelectAllTagNodes() {
 			if (_tagTreeRoot) {
-				_tagTreeRoot.checkAllNodes(false);	
+				_tagTreeRoot.checkAllNodes(false);
 			}
 		}
 		// 切换到编辑页面时，要隐藏之前展开的树节点
@@ -320,7 +320,7 @@ define(["/web/libs/component/zTreeBase","/web/libs/common/util/GlobalUtil","/web
 		}
 
 		/**
-		 * 编辑页面目录树点击事件触发方法	
+		 * 编辑页面目录树点击事件触发方法
 		 * @param  {[type]} event    [description]
 		 * @param  {[type]} treeId   [description]
 		 * @param  {[type]} treeNode [description]
@@ -359,7 +359,7 @@ define(["/web/libs/component/zTreeBase","/web/libs/common/util/GlobalUtil","/web
 			});
 		}
 
-		// 
+		//
 		function selectCurTags(nodeList) {
 			if (_tagsList.length < 1) {
 				return;
@@ -384,16 +384,16 @@ define(["/web/libs/component/zTreeBase","/web/libs/common/util/GlobalUtil","/web
 		 */
 		function initParamsSpanHandler() {
 			document.getElementById('params_category').onclick = function() {
-				// 点击目录信息时再加载左侧树 
+				// 点击目录信息时再加载左侧树
 				if (_categoryTreeRoot === null) {
-					initTree();	
+					initTree();
 				}
 				$("#" + _id.categoryTree).toggle(500);
 			};
 			document.getElementById('params_tag').onclick = function() {
-				// 点击目录信息时再加载左侧树 
+				// 点击目录信息时再加载左侧树
 				if (_tagTreeRoot === null) {
-					initTree();	
+					initTree();
 				}
 				$("#" + _id.tagTree).toggle(500);
 			};
@@ -415,7 +415,7 @@ define(["/web/libs/component/zTreeBase","/web/libs/common/util/GlobalUtil","/web
 			var tags = collectTagGuids();
 			// 为空不传，如果传入的话，会造成openapi端请求错误
 			if (tags && tags.length > 0) {
-				documentInfo.document_tag_guids = tags;	
+				documentInfo.document_tag_guids = tags;
 			}
 			return documentInfo;
 		}
@@ -454,9 +454,9 @@ define(["/web/libs/component/zTreeBase","/web/libs/common/util/GlobalUtil","/web
 			var minutes = curDate.getMinutes();
 			var timeStr = '';
 			if (minutes < 10) {
-				timeStr = hours + ':0' + minutes; 
+				timeStr = hours + ':0' + minutes;
 			} else {
-				timeStr = hours + ':' + minutes; 	
+				timeStr = hours + ':' + minutes;
 			}
 			return timeStr;
 		}

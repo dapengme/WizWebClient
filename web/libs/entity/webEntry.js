@@ -6,11 +6,11 @@ seajs.config({
 	// 	'Wiz': '/libs/Wiz',																			//Wiz相关模块
 	// 	'locale': '/locale/main'
 	// },
-	map: [
-	// 时间戳控制版本管理
-    [ /^(.*\/libs\/.*\.(?:css|js))(?:.*)$/i, '$1?201212251828' ]
-  ],
+  // / map: [
+  // / // 时间戳控制版本管理
+  //   // [ /^(.*\/libs\/.*\.(?:css|js))(?:.*)$/i, '$1?201212251828' ]
+  // ],
 
 	locale: 'zh-cn'																						//默认语言包
 });
-seajs.use(['seajs/plugins/plugin-i18n', '/web/libs/entity/web-main']);//'./libs/entity/web-main');
+seajs.use(['seajs/plugins/plugin-i18n', '/libs/entity/web-main']);//'./libs/entity/web-main');

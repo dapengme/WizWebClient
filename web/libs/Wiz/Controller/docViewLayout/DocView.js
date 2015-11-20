@@ -1,8 +1,8 @@
-define(["./FrameController", "/web/locale/main"], function (require, exports, module) {
+define(["./FrameController", "/locale/main"], function (require, exports, module) {
 	'use strict';
 
 	var FrameCtrl = require('./FrameController'),
-			_locale = require('/web/locale/main'),
+			_locale = require('/locale/main'),
 			_readFrameId = 'wiz_doc_iframe',
 			_curDoc = null,
 			// 保存jQuery选择器关键字
@@ -12,7 +12,7 @@ define(["./FrameController", "/web/locale/main"], function (require, exports, mo
 			_helpPage = {
 				loading: _locale.HelpPage.loading,
 				protected: _locale.HelpPage.protected,
-				welcome: _locale.HelpPage.welcome	
+				welcome: _locale.HelpPage.welcome
 			},
 			titleJqElem = $( '#' + _selector.title);
 

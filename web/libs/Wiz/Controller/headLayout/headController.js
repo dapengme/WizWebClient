@@ -34,7 +34,7 @@ define(["../../constant","../../../../locale/main"], function (require, exports,
 			_view = {
 				showUser: function(userInfo) {
 					var nameSelector = getJqIdSelector(_node.userNameId);
-					nameSelector.html(userInfo.user.displayname);
+					nameSelector.html(userInfo.displayname);
 				},
 				initFillContent: function() {
 					// 已经成功登陆后再开始加载
@@ -112,9 +112,9 @@ define(["../../constant","../../../../locale/main"], function (require, exports,
 						event = event || window.event;
 						// 阻止默认行为
 						if (event.preventDefault) {
-							event.preventDefault();	
+							event.preventDefault();
 						} else {
-							event.returnValue = false;	
+							event.returnValue = false;
 						}
 						var visible = userMenuListElem.css('visibility');
 						if (visible === 'visible') {
@@ -150,7 +150,7 @@ define(["../../constant","../../../../locale/main"], function (require, exports,
 								// TODO open dialog
 								_messageCenter.showSetting(url);
 							}
-							
+
 							// ie6下无反应
 						}
 					}
@@ -216,28 +216,28 @@ define(["../../constant","../../../../locale/main"], function (require, exports,
       if ( !this.o ) this.o = $({});
       this.o.bind.apply(this.o, arguments);
     },
-    
+
     trigger: function(){
       if ( !this.o ) this.o = $({});
       this.o.trigger.apply(this.o, arguments);
     }
   };
-  
+
   // 状态机类、用来控制顶部按钮组的显示
   var StateMachine = function(){};
   StateMachine.fn  = StateMachine.prototype;
   $.extend(StateMachine.fn, Events);
-  
+
   StateMachine.fn.add = function(controller){
     this.bind("change", function(e, current){
       if (controller === current) {
         controller.activate();
       }
       else {
-        controller.deactivate();	
+        controller.deactivate();
       }
     });
-    
+
     controller.active = $.proxy(function(){
       this.trigger("change", controller);
     }, this);

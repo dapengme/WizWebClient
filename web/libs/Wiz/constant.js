@@ -3,7 +3,7 @@
  */
 define(function (require, exports, module) {
 	'use strict';
-	var BASE_URL = '',
+	var BASE_URL = '/dummy',
 			API_BASE = BASE_URL + '/api',
 			CATEGORY_BASE = API_BASE + '/category',
 			TAG_BASE = API_BASE + '/tag',
@@ -35,7 +35,7 @@ define(function (require, exports, module) {
 	//async: ajax请求是否异步
 	var api = {
 
-		LOGIN: API_BASE + '/login',
+		LOGIN: API_BASE + '/login.json',
 	  LOGOUT: API_BASE + '/logout',
 		REGISTER: API_BASE + '/register',
 	  KEEPALIVE: {
@@ -45,7 +45,7 @@ define(function (require, exports, module) {
 	  },
 
 		GET_USER_INFO: {
-			url: API_BASE + '/user/info',
+			url: API_BASE + '/user/info.json',
 			action: 'get',
 	  	async: false
 		},
@@ -57,17 +57,17 @@ define(function (require, exports, module) {
 
 	  //目录相关接口
 	  CATEGORY_GET_ALL: {
-	  	url: CATEGORY_BASE + '/all',
+	  	url: CATEGORY_BASE + '/all.json',
 	  	action: 'get',
 	  	async: true
 	  },
 	  CATEGORY_GET_ROOT: {
-	  	url: CATEGORY_BASE + '/root',
+	  	url: CATEGORY_BASE + '/root.json',
 	  	action: 'get',
 	  	async: true
 	  },
 	  CATEGORY_GET_CHILD: {
-	  	url: CATEGORY_BASE + '/child',
+	  	url: CATEGORY_BASE + '/child.json',
 	  	action: 'get',
 	  	async: true
 	  },
@@ -89,18 +89,18 @@ define(function (require, exports, module) {
 
 	  //标签相关接口
 	  TAG_GET_ALL: {
-	  	url: TAG_BASE + '/all',
+	  	url: TAG_BASE + '/all.json',
 	  	action: 'get',
 	  	async: true
 	  },
 	  TAG_GET_ROOT: {
-	  	url: TAG_BASE + '/root',
+	  	url: TAG_BASE + '/root.json',
 	  	action: 'get',
 	  	async: true
 
 	  },
 	  TAG_GET_CHILD: {
-	  	url: TAG_BASE + '/child',
+	  	url: TAG_BASE + '/child.json',
 	  	action: 'get',
 	  	async: true
 	  },
@@ -122,7 +122,7 @@ define(function (require, exports, module) {
 
 	  // 文档相关接口
 	  DOCUMENT_GET_LIST: {
-	  	url: DOCUMENT_BASE + '/list',
+	  	url: DOCUMENT_BASE + '/list.json',
 	  	action: 'get',
 	  	async: true
 	  },
@@ -132,10 +132,10 @@ define(function (require, exports, module) {
 	  	async: true
 	  },
 	  DOCUMENT_GET_INFO: {
-	  	url: DOCUMENT_BASE + '/info',
+	  	url: DOCUMENT_BASE + '/info.json',
 	  	action: 'get',
 	  	async: true
-	  },	
+	  },
 	  // 该接口只在openapi内创建一个临时的缓存目录
 	  // 只有当用户真正点击保存后，才会把相关信息上传到服务器端
 	  DOCUMENT_CREATE_DATA: {
@@ -184,7 +184,7 @@ define(function (require, exports, module) {
 	  	action: 'post',
 	  	async: true
 	  },
-	  
+
 	  // 附件接口
 	  ATTACHMENT_DELETE: {
 	  	url: ATTACHMENT_BASE,

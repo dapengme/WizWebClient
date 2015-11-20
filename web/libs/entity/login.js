@@ -5,7 +5,7 @@ define(function(require, exports) {
 			api = require('Wiz/constant').api,
 			debugModel = GlobalUtil.getUrlParam('debug'),
 			// redirectUrl = 'http://service.wiz.cn/web/?t=';
-			redirectUrl = 'http://localhost/web?t=';	
+			redirectUrl = 'http://localhost/web?t=';
 
 	$(document).ready(function() {
 		$("#login_name").select();
@@ -93,7 +93,7 @@ define(function(require, exports) {
 	});
 	function preventDefault(event) {
 		if (event.preventDefault) {
-			event.preventDefault();	
+			event.preventDefault();
 		} else {
 			event.returnValue = false;
 		}
@@ -117,15 +117,15 @@ define(function(require, exports) {
 					keep_password = "off";
 				}
 
-				var params = { 
-					user_id : user_id, 
+				var params = {
+					user_id : user_id,
 					password : password,
 					isKeep_password : keep_password,
 					debug: debugModel
 				};
 				// 调用一下ajax
 				$('#loginkeycode').attr('disabled', 'disabled');
-				$.post(api.LOGIN, params, function (data, status){
+				$.get(api.LOGIN, params, function (data, status){
 					callBackLogin(data, status);
 				});
 			}else{
@@ -163,12 +163,13 @@ define(function(require, exports) {
 			if(data.code==200){
 				var url = redirectUrl + data.token;
 				// var url = api.WEB_URL + '?t=' + data.token + '&debug=' + debugModel;
-				window.location.replace(url);
+				// window.location.replace(url);
+				window.location.replace("/index.html");
 			} else if (data.code == 1108) {
 				$('#tip_error_login').html('登陆尝试次数过多，请稍后重试').fadeIn();
 			}	else {
 				$("#tip_error_login").html("用户名或密码不正确,请重新输入").fadeIn();
-			}	
+			}
 		}else if(status == null){
 			alert('链接错误');
 		}else if(status == 'timeout'){
@@ -184,8 +185,8 @@ define(function(require, exports) {
 	function autoLogin() {
 		// console.log(cookie('loginCookie'));
 		 if ( $.cookie('loginCookie') != null && $.cookie('passwordCookie') != null ) {
-		 	var params = { 
-					user_id : cookie('loginCookie'), 
+		 	var params = {
+					user_id : cookie('loginCookie'),
 					password : cookie('passwordCookie'),
 					// isKeep_password : keep_password,
 					debug: debugModel
@@ -197,20 +198,20 @@ define(function(require, exports) {
 						var url = redirectUrl + data.token;
 						// var url = api.WEB_URL + '?t=' + data.token + '&debug=' + debugModel;
 						window.location.replace(url);
-					} 
+					}
 					else if (data.code == 1108) {
 						$('#tip_error_login').html('登陆尝试次数过多，请稍后重试').fadeIn();
 					}	else {
 						$("#tip_error_login").html("用户名或密码不正确,请重新输入").fadeIn();
-					}	
+					}
 				});
 		 }
 	}
 	// TODO增加判断
 	if (document.location.pathname === '/login' || document.location.pathname === '/login') {
 		autoLogin();
-	} 
-	
+	}
+
 	// 注册页面自动填充邀请码
 	function autoFillInviteCode() {
 		var inviteCode = cookie('iCode');

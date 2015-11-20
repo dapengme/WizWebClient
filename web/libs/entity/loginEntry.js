@@ -1,9 +1,9 @@
 seajs.config({
 	alias: {
-		'jquery': '/web/libs/common/jquery/jquery-1.7.2.js',
-		'cookie': '/web/libs/common/jquery/jquery.cookie.js',
-		'common': '/web/libs/common',
-		'Wiz': '/web/libs/Wiz'
+		'jquery': '/libs/common/jquery/jquery-1.7.2.js',
+		'cookie': '/libs/common/jquery/jquery.cookie.js',
+		'common': '/libs/common',
+		'Wiz': '/libs/Wiz'
 	},
 	map: [
 	// 时间戳控制版本管理
@@ -19,4 +19,4 @@ seajs.modify('jquery', function(require, exports, module) {
 seajs.modify('cookie', function(require, exports, module) {
 	module.exports = $.cookie;
 });
-seajs.use('/web/libs/entity/login');
+seajs.use('/libs/entity/login');

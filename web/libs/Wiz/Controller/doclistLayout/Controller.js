@@ -1,4 +1,4 @@
-define(["/web/locale/main"], function (require, exports, module) {
+define(["/locale/main"], function (require, exports, module) {
 	'use strict';
 	var _messageCenter = null,
 		_node = {
@@ -24,9 +24,9 @@ define(["/web/locale/main"], function (require, exports, module) {
 			docList: []
 		},
 		_containerObj = $('#' + _node.containerId),
-		_locale = require('/web/locale/main');
+		_locale = require('/locale/main');
 
-		function bindSortHandler() { 
+		function bindSortHandler() {
 			var sortMenuElem = $('#' + _node.sortMenuId),
 					sortListElem = $('#' + _node.sortListId);
 			sortMenuElem.click(function (event) {
@@ -55,9 +55,9 @@ define(["/web/locale/main"], function (require, exports, module) {
 					sortListElem.css('visibility', 'hidden');
 					// 阻止默认行为
 					if (event.preventDefault) {
-						event.preventDefault();	
+						event.preventDefault();
 					} else {
-						event.returnValue = false;	
+						event.returnValue = false;
 					}
 					var target = event.target;
 					var nodeName = target.nodeName.toLowerCase();
@@ -124,7 +124,7 @@ define(["/web/locale/main"], function (require, exports, module) {
 		// 开始加载
 		_view.renderList(docList, null, cmd);
 	}
-	
+
 
 	function sortDocList(docList, cmd, bDes) {
 		if (!docList || docList.length < 1)  {
@@ -133,7 +133,7 @@ define(["/web/locale/main"], function (require, exports, module) {
 		docList.sort(function(a, b) {
 			try {
 				if (bDes === 'false') {
-					return a[cmd].localeCompare(b[cmd]);	
+					return a[cmd].localeCompare(b[cmd]);
 				} else {
 					return b[cmd].localeCompare(a[cmd]);
 				}
@@ -157,13 +157,13 @@ define(["/web/locale/main"], function (require, exports, module) {
 				dateCmd = null;
 			}
 
-		  var docList = $('#' + _containerId);  
+		  var docList = $('#' + _containerId);
 		  if(!docs || docs.length == 0){
 		    return ;
 		  }
 
 		  var content = '<table id="'
-		  		+ _node.tableId 
+		  		+ _node.tableId
 		  		+'" class="table table-striped" cellspacing="0" cellpadding="0" unselectable="on">';
 		  content += '<tbody>';
 		  $.each(docs,function(i,doc){
